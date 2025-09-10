@@ -5,9 +5,9 @@ public class Multiples {
         System.out.println(multiples(1000, 3, 5));
     }
 
-    static int multiples(int n, int a, int b) {
+    public static int multiples(int n, int a, int b) {
         int counter = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             boolean multiples_of_a = i % a == 0;
             boolean multiples_of_b = i % b == 0;
 
@@ -16,5 +16,8 @@ public class Multiples {
             }
         }
         return counter;
+    }
+    public static int multiples() {
+        return multiples(1000,3,5);
     }
 }
